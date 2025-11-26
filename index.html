@@ -4,18 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Course Explorer</title>
+
+    <!--link to css file-->  
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
+    <!-- page title -->
     <h1>Course Explorer</h1>
 
+
+    <!-- file upload section -->
     <section id="upload-section">
         <input id="fileInput" type="file" accept=".json">
         <span id="errorMessage"></span>
     </section>
 
+
+     <!-- filter section -->
     <section id="filter-section">
         <h3>Filters</h3>
 
@@ -47,6 +54,8 @@
     <section id="sort-section">
         <h3>Sort Courses</h3>
 
+
+         <!-- sorting section -->
         <label>Sort By:
             <select id="sort-select">
                 <option value="">None</option>
@@ -59,9 +68,16 @@
         </label>
     </section>
 
+
+     <!-- list of course items -->
     <section id="course-list"></section>
+
+
+  <!-- course details panel -->
     <section id="course-details"></section>
 
+
+    <!-- link to JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
